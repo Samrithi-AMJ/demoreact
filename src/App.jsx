@@ -6,16 +6,20 @@ import "./App.css";
 import HelloWorld from "./hello-world";
 import HelloReact from "./helloreact";
 import MiComponent from "./mi/mi-component";
+import BoxComponent from "./boxes/boxes";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div>
-      <HelloWorld />
+      {
+        /* <HelloWorld />
       <HelloReact />
       <HelloWorld />
-      <MiComponent />
+      <MiComponent /> */
+        <BoxComponent />
+      }
     </div>
   );
 }
