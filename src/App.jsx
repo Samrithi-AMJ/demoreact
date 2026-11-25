@@ -5,6 +5,7 @@ import viteLogo from "./assets/vite.svg";
 import "./App.css";
 import HelloWorld from "./hello-world";
 import HelloReact from "./helloreact";
+import MiComponent from "./mi/mi-component";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,6 +15,7 @@ function App() {
       <HelloWorld />
       <HelloReact />
       <HelloWorld />
+      <MiComponent />
     </div>
   );
 }
