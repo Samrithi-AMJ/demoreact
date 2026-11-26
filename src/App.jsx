@@ -7,6 +7,7 @@ import HelloWorld from "./hello-world";
 import HelloReact from "./helloreact";
 import MiComponent from "./mi/mi-component";
 import BoxComponent from "./boxes/boxes";
+import SymbolComponent from "./symbol/symbol";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -18,8 +19,11 @@ function App() {
       <HelloReact />
       <HelloWorld />
       <MiComponent /> */
-        <BoxComponent />
       }
+      <>
+        <BoxComponent />
+        <SymbolComponent />
+      </>
     </div>
   );
 }
