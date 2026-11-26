@@ -8,8 +8,10 @@ import HelloReact from "./helloreact";
 import MiComponent from "./mi/mi-component";
 import BoxComponent from "./boxes/boxes";
 import SymbolComponent from "./symbol/symbol";
+import TopComponent from "./top/top";
 import { boxesData } from "./data";
-
+import { symbolData } from "./data";
+import { topData } from "./data";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -20,9 +22,10 @@ function App() {
       <HelloWorld />
       <MiComponent /> */}
       <>
+        <TopComponent data={topData} />
         <BoxComponent data={boxesData} />
         <BoxComponent data={boxesData} />
-        <SymbolComponent />
+        <SymbolComponent data={symbolData} />
       </>
     </div>
   );

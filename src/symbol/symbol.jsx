@@ -1,9 +1,9 @@
 import react from "react";
 import "./symbol.css";
-const SymbolComponent = () => {
+const SymbolComponent = (props) => {
   return (
     <>
-      <div className="symbol_parent">
+      {/* <div className="symbol_parent">
         <h2>A Symbol of Excellence in Placement Training</h2>
 
         <div className="symbol_para">
@@ -42,6 +42,32 @@ const SymbolComponent = () => {
               With our continuous research and development, we provide you with
               an excellent Aptitude training.
             </p>
+          </div>
+        </div>
+      </div> */}
+      <div className="symbol_parent">
+        <h2>{props?.data?.title}</h2>
+        <div className="symbol_para">{props?.data?.subTitle}</div>
+        <div className="symbol_parent_two">
+          <div>
+            <div className="symbol_parent_heading">Our Vision</div>
+            <div className="symbol_parent_subheading">
+              {props?.data?.point1}
+            </div>
+          </div>
+          <div>
+            <div className="symbol_parent_heading">Our Mission</div>
+            <div className="symbol_parent_subheading">
+              {props?.data?.point2}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bp">
+        <div className="block">
+          <div className="title">
+            <h2>{props?.data?.heading}</h2>
+            <p>{props?.data?.description}</p>
           </div>
         </div>
       </div>

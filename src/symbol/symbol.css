@@ -8,12 +8,12 @@
 .symbol_parent h2 {
   font-size: 45px;
   margin-bottom: 30px;
-  color: #30363d;
+  color: #141617;
 }
 
 .symbol_para {
   font-size: 22px;
-  color: #526b8b;
+  color: #101113;
   max-width: 1600px;
   line-height: 1.8;
   margin-bottom: 40px;
@@ -52,7 +52,7 @@
 
 .symbol_parent_subheading {
   font-size: 20px;
-  color: #526b8b;
+  color: #1f2123;
   line-height: 1.8;
 }
 
@@ -85,6 +85,11 @@
   border: 2px solid red;
   color: white;
   gap: 20px;
+}
+@media (max-width: 750px) {
+  .block {
+    border-radius: 10px;
+  }
 }
 
 .title {
